@@ -24,10 +24,11 @@ public class Main {
 		System.out.println("4 : Sua tu");
 		System.out.println("5 : Goi y tu");
 		System.out.println("6 : Luu ra file");
+                System.out.println("7 : In tat ca cac tu ra man hinh");
 		System.out.println("Chu y khong nhap dau cach truoc cac tu!");
 		while (true) {
 			String s = cin.nextLine();
-			if (!"0".equals(s)&&!"1".equals(s)&&!"2".equals(s)&&!"3".equals(s)&&!"4".equals(s)&&!"5".equals(s)&&!"6".equals(s)) {
+			if (!"0".equals(s)&&!"1".equals(s)&&!"2".equals(s)&&!"3".equals(s)&&!"4".equals(s)&&!"5".equals(s)&&!"6".equals(s)&&!"7".equals(s)) {
 				System.out.println("Gia tri khong hop le. Nhap lai gia tri !");
 				continue ;
 			}
@@ -95,6 +96,9 @@ public class Main {
 				Dm.dictionaryExportToFile();
 				System.out.println("Luu thanh cong!");
 			}
+                        if (i==7){
+                            Dc.showAllWords();
+                        }
 		}
 		cin.close();
 	}
